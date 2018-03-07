@@ -1,6 +1,5 @@
 /*mobile*/
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 body {
     height: 1000px;
     font-family: verdana;
@@ -43,18 +42,24 @@ body {
     width: 20%;
     height: 20%;
 }
-hr {
-    border-top: none;
-    border-bottom-style: dotted;
-    border-width: 10px;
-    color: white;
-}
 
 .vl {
     border-left: 10px dotted white;
     height: 1000px;
     width: 20px;
     margin: 0px auto;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.route {
+    grid-area: route;
+}
+
+.rooms {
+    grid-area: rooms;
 }
 
 =======
