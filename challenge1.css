@@ -1,0 +1,85 @@
+/*mobile*/
+<<<<<<< HEAD
+<<<<<<< HEAD
+body {
+    height: 1000px;
+    font-family: verdana;
+    background-color: black;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+#date {
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+}
+.grid-container {
+  display: grid;
+    grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    'route menu menu'
+    'route rooms rooms';
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+#rocket {
+    width: 20%;
+    height: 20%;
+}
+hr {
+    border-top: none;
+    border-bottom-style: dotted;
+    border-width: 10px;
+    color: white;
+}
+
+.vl {
+    border-left: 10px dotted white;
+    height: 1000px;
+    width: 20px;
+    margin: 0px auto;
+}
+
+=======
+p {
+    color:pink;
+}
+>>>>>>> parent of 1284bbe... css grid
+=======
+p {
+    color:pink;
+}
+>>>>>>> parent of 1284bbe... css grid
+
+/*tablet breakpoint*/
+
+@media only screen and (min-width: 600px) {
+    }
+}
+/*Laptop breakpoint*/
+@media only screen and (min-width: 1000px) {
+    
+    
+}
+/*Desktop breakpoint*/
+@media only screen and (min-width: 1500px) {
+    
+    
+}
