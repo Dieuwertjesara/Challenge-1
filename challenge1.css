@@ -1,11 +1,20 @@
 /*mobile*/
-
+@media only screen and (min-width: 100px)
+{
+    
+    html {
+        height: 100%;
+        position: fixed;
+    }    
 body {
-    height: 1000px;
+    width: 100%;
+    height: 100%;
     font-family: verdana;
     background-color: black;
     color: white;
-}
+    position: fixed;
+} 
+    
 * {
     box-sizing: border-box;
 }
@@ -21,36 +30,39 @@ body {
     text-align: center;
     font-size: 30px;
     margin: 0px;
+    color: red;
 }
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas:
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
     'route menu menu'
     'route rooms rooms';
-  grid-gap: 30px;
-  padding: 10px;
-  height: 100%;
+    grid-gap: 20px;
+    height: 100%;
 }
 .grid-container > .menu , .route , .rooms {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px;
   font-size: 30px;
   background-color: white; 
+  height: 100%;
 }
 
 #rocket {
     width: 100%;
     animation-name: rocket;
-    animation-duration: 4s;
-    position: relative;
-    bottom: 130px;
-    margin: 0px auto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    bottom: 0px;
 }
 
 @keyframes rocket {
-    from {bottom: 20px;}
-    to {bottom: 1000px;}
+    from {bottom: 50%; top: 100%;}
+    to {bottom: 100%; top: 0%;}
 }
 
 #vl {
@@ -60,32 +72,74 @@ body {
     margin: 0px auto;
 }
 
+hr {
+    display: none;
+    
+}    
+    
 .menu {
     grid-area: menu;
 }
 
 .route {
     grid-area: route;
-    height: 100%;
+    position: relative;
 }
 
 .rooms {
     grid-area: rooms;
 }
-
+}
 
 /*tablet breakpoint*/
 
 @media only screen and (min-width: 600px) {
-    }
+    
+#date {
+    color: pink;
+}
 }
 /*Laptop breakpoint*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
     
-    
+#date {
+    color: blue;
+}    
 }
 /*Desktop breakpoint*/
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1100px) {
     
+#date {
+    color: aquamarine;
+}    
+.grid-container {
+  grid-template-areas:
+    'route route '
+    'menu rooms ';
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    }
+#rocket {
+    transform: rotate(90deg); 
+    position: fixed;
+    top: 15px;
+    width: 20%;
+    margin: 0px auto;
+    }
+
+#vl {
+    border-bottom: 10px dotted black;
+    height: 10px;
+    width: 95%;
+    top: 15px;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 10px;
+    left: 0px;
+    } 
     
+@keyframes rocket {
+    from {left: 0%; right: 100%;}
+    to {left: 100%; right: 5%;}
+}
 }

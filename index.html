@@ -2,19 +2,21 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link type="text/css" href="challenge1.css" rel="stylesheet" />
-	</head>  
+	</head>   
     <body>
-        <video autoplay muted loop id="myVideo">
-  <source src="images/Trip%20through%20space.mp4" type="video/mp4">
-</video>
         <p id="date"></p>
             <script>
             var d = new Date();
-            document.getElementById("date").innerHTML = d.toDateString();
+                document.getElementById("date").innerHTML = d.toDateString();
             </script>
         <div class="grid-container">
+        <video autoplay muted loop id="myVideo">
+          <source src="images/Trip%20through%20space.mp4" type="video/mp4">
+        </video>
+        
+        
             <div class="menu">
                 <p>menu</p>
             </div>
@@ -28,9 +30,15 @@
         </div>
             
         <div class="route">
-        <div id="vl"></div>   
+            <img id="earth" src="images/earth-clip-art-8.png">
+            
+            <div id="vl"></div>
+            <img id="mars" src="images/mars-clipart-cute-3.png">
         <img id="rocket" src="images/rocket.png">
+        
+            
         </div>
-        </div>    
+        </div>
+    
        </body>
 </html>
