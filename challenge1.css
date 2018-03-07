@@ -50,13 +50,13 @@ body {
 }
 
 #rocket {
-    width: 100%;
+    width: 50%;
     animation-name: rocket;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     position: absolute;
     z-index: 1;
-    left: 0px;
+    left: 35px;
     bottom: 0px;
 }
 
@@ -67,10 +67,25 @@ body {
 
 #vl {
     border-left: 10px dotted black;
-    height: 99%;
+    height: 80%;
     width: 10px;
     margin: 0px auto;
+    position: absolute;
+    left: 65px;
+    top: 50px;
 }
+    
+#earth {
+    width: 20%;
+    position: absolute;
+    left: 55px;
+    }
+#mars {
+    width: 20%;
+    position: absolute;
+    left: 55px;
+    bottom: 50px;
+    }
 
 hr {
     display: none;
@@ -122,24 +137,38 @@ hr {
 #rocket {
     transform: rotate(90deg); 
     position: fixed;
-    top: 15px;
-    width: 20%;
+    top: 45px;
+    width: 15%;
     margin: 0px auto;
+    animation-duration: 5s;
     }
-
+#earth {
+    width: 8%;
+    left: 10px;
+    position: absolute;
+    top: 40px;
+    }
+    
+#mars {
+    width: 10%;
+    right: 5px;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    }
 #vl {
     border-bottom: 10px dotted black;
     height: 10px;
-    width: 95%;
+    width: 80%;
     top: 15px;
     position: absolute;
     margin-top: 6%;
-    margin-left: 10px;
+    margin-left: 120px;
     left: 0px;
     } 
     
 @keyframes rocket {
     from {left: 0%; right: 100%;}
-    to {left: 100%; right: 5%;}
+    to {left: 80%; right: 0%;}
 }
 }
