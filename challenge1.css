@@ -4,7 +4,7 @@
     
     html {
         height: 100%;
-        position: fixed;
+        margin: 0px auto;
     }    
 body {
     width: 100%;
@@ -12,7 +12,7 @@ body {
     font-family: verdana;
     background-color: black;
     color: white;
-    position: fixed;
+    margin: 0px auto;
 } 
     
 * {
@@ -40,13 +40,16 @@ body {
     'route rooms rooms';
     grid-gap: 20px;
     height: 100%;
+    position: relative;
+    width: 100%;
 }
 .grid-container > .menu , .route , .rooms {
-  text-align: center;
-  padding: 10px;
-  font-size: 30px;
-  background-color: white; 
-  height: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 30px;
+      background-color: white; 
+      height: 100%;
+      position: relative;
 }
 
 #rocket {
@@ -55,9 +58,8 @@ body {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     position: absolute;
-    z-index: 1;
     left: 35px;
-    bottom: 0px;
+    bottom: 50px;
 }
 
 @keyframes rocket {
@@ -132,39 +134,40 @@ hr {
     'route route '
     'menu rooms ';
     grid-template-rows: 1fr 3fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+    margin: 0px auto;
     }
+
 #rocket {
     transform: rotate(90deg); 
-    position: fixed;
-    top: 45px;
-    width: 15%;
-    margin: 0px auto;
+    position: absolute;
     animation-duration: 5s;
+    width: 15%;
+    left: 0%;
+    bottom: 0px;
     }
 #earth {
-    width: 8%;
-    left: 10px;
-    position: absolute;
-    top: 40px;
-    }
+    width: 10%;
+    right: auto;
+    left: 1%;
+    top: 20%;
+    margin: 0px auto;    }
     
 #mars {
     width: 10%;
-    right: 5px;
-    position: absolute;
-    top: 30px;
+    right: 0%;
     left: auto;
+    margin: 0px auto;
     }
+    
 #vl {
-    border-bottom: 10px dotted black;
-    height: 10px;
-    width: 80%;
-    top: 15px;
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 120px;
-    left: 0px;
+    border-bottom: 8px dotted black;
+    height: 1%;
+    width: 75%;
+    left: 0%;
+    top: 48%;
+    margin: 0px auto;
+    position: relative;
     } 
     
 @keyframes rocket {
