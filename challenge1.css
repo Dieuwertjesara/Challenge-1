@@ -47,10 +47,8 @@ body {
 .grid-container > .menu , .route , .rooms {
       text-align: center;
       padding: 10px;
-      font-size: 30px;
-      background-color: white; 
+      font-size: 30px; 
       height: 100%;
-      opacity: 0.6;
       align-content: center;
 }
 
@@ -70,7 +68,7 @@ body {
 }
 
 #vl {
-    border-left: 8px dotted black;
+    border-left: 8px dotted white;
     height: 80%;
     width: 10px;
     top: 10%;
