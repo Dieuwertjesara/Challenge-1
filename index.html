@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link type="text/css" href="challenge1.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../compiled/flipclock.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="../compiled/flipclock.js"></script>
 	</head>   
     <body>
         <p id="date"></p>
@@ -16,15 +21,49 @@
           <source src="images/Trip%20through%20space.mp4" type="video/mp4">
         </video>
         
-        
-            <div class="menu">
-                <p>menu</p>
-            </div>
-            
-            <div class="rooms">
-            </div>
         <div class="menu">
-        
+        <script>
+        /*
+* Basic Count Up from Date and Time
+* Author: @mrwigster / trulycode.com
+*/
+window.onload=function() {
+  // Month,Day,Year,Hour,Minute,Second
+  upTime('jan,01,2018,00:00:00'); // ****** Change this line!
+}
+function upTime(countTo) {
+  now = new Date();
+  countTo = new Date(countTo);
+  difference = (now-countTo);
+
+  days=Math.floor(difference/(60*60*1000*24)*1);
+  hours=Math.floor((difference%(60*60*1000*24))/(60*60*1000)*1);
+  mins=Math.floor(((difference%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
+  secs=Math.floor((((difference%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
+
+  document.getElementById('days').firstChild.nodeValue = days;
+  document.getElementById('hours').firstChild.nodeValue = hours;
+  document.getElementById('minutes').firstChild.nodeValue = mins;
+  document.getElementById('seconds').firstChild.nodeValue = secs;
+
+  clearTimeout(upTime.to);
+  upTime.to=setTimeout(function(){ upTime(countTo); },1000);
+}
+        </script>
+            
+<div id="countup">
+    <h1>Time since launch</h1>
+  <p id="days">00</p>
+  <p class="timeRefDays">D</p>
+  <p id="hours">00</p>
+  <p class="timeRefHours">H</p>
+  <p id="minutes">00</p>
+  <p class="timeRefMinutes">M</p>
+    <p id="seconds">00</p>
+  <p class="timeRefSeconds">S</p>
+  
+  
+</div>
         </div>
         <div class="rooms">           
         </div>
