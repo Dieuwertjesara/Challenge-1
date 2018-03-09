@@ -15,6 +15,9 @@ body {
     margin: 0px auto;
     position: fixed;
 } 
+    h1{
+        font-size: 120%;
+    }
     
 * {
     box-sizing: border-box;
@@ -180,15 +183,23 @@ hr {
 }
 #countup p {
   display: inline-block;
-  padding: 5px;
-  margin: 0 0 20px;
+    margin: 0px auto;
   color: lightskyblue;
+  font-size: 80%;
+    width: 8%
 }
 
 /*tablet breakpoint*/
 
 @media only screen and (min-width: 520px) {
 
+    h1{
+        font-size: 200%;
+    }
+    
+    #countup p {
+        font-size: 150%;
+    }
 #line {
     
     }   
