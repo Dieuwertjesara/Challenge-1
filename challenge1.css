@@ -31,7 +31,7 @@ body {
     text-align: center;
     font-size: 30px;
     margin: 0px;
-    color: red;
+    color: lightskyblue;
 }
 .grid-container {
     display: grid;
@@ -198,7 +198,7 @@ hr {
     }
     
 #date {
-    color: red;
+    color: lightskyblue;
 }
 }
 /*Laptop breakpoint*/
@@ -206,7 +206,7 @@ hr {
  
     
 #date {
-    color: blue;
+    color: lightskyblue;
 }    
     #rocket {
         width: 12%;
@@ -217,7 +217,7 @@ hr {
 @media only screen and (min-width: 1200px) {
     
 #date {
-    color: aquamarine;
+    color: lightskyblue;
 }    
 .grid-container {
   grid-template-areas:
